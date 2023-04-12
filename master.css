@@ -2,9 +2,7 @@ body {
   font-family: "Hanken Grotesk", sans-serif;
   margin: 0;
 }
-html {
-  background-color: hsl(221, 100%, 96%);
-}
+
 .container {
   width: 600px;
   /* height: 600px; */
@@ -27,12 +25,15 @@ html {
 .container .summary {
   flex-basis: 50%;
   text-align: center;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 3px 0px 30px -1px rgb(215 214 214);
 }
 .container .greet h4 {
   font-size: 20px;
   color: hsl(241, 100%, 89%);
 }
-@media (max-width: 630px){
+@media (max-width: 630px) {
   .container {
     width: 350px;
     margin: 0 auto;
@@ -43,7 +44,6 @@ html {
     flex-basis: 100%;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
-
   }
   .container .summary {
     flex-basis: 100%;
@@ -114,7 +114,7 @@ html {
 }
 .container .summary .contain .box .all p {
   color: hsl(241, 100%, 89%);
-  font-weight: 800;
+  font-weight: 700;
 }
 .container .summary .contain .box .all span {
   color: hsl(224, 30%, 27%);
@@ -138,6 +138,9 @@ html {
   width: 120px;
   margin: 0;
 }
+.container .summary .contain .width {
+  width: 15px;
+}
 .container .summary .contain .button {
   padding: 10px;
   border-radius: 30px;
@@ -146,5 +149,3 @@ html {
   color: white;
   cursor: pointer;
 }
-
-
